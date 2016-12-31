@@ -15,7 +15,9 @@ After AOI install:
 - pycrypto (for broadlink) https://community.home-assistant.io/t/broadlink-rm-pro-getting-error/7877/14
 - phantomjs (for alarm.com) https://www.reddit.com/r/homeassistant/comments/57amjb/alarmcom_homeassistant/
 
-# update wifi and locale
+# detailed steps
+
+## update wifi and locale
 
 - sudo nano /etc/default/keyboard
 - sudo dpkg-reconfigure locales

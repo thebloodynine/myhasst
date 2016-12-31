@@ -22,11 +22,11 @@ After AOI install:
 - sudo dpkg-reconfigure tzdata
 - sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 add to the end of the file:
-'''
+```
 network={
         ssid="SSIDGOESHERE"
         psk="PASSWORDGOESHERE"
         }
-'''
+```
 
 

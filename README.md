@@ -5,16 +5,17 @@ this is the inspiration: https://github.com/sjorsjes/home-assistant#install-mysq
 
 # Short version
 
-Run AIO install from the pi, not ssh.  ssh sessions drop causing lots of install issues: 
-  https://home-assistant.io/getting-started/installation-raspberry-pi-all-in-one/
+* [Installation guide]https://home-assistant.io/getting-started/installation-raspberry-pi-all-in-one/ *
+   Install from the pi, not ssh.  
   
 After AOI install:
 - update wifi and locale
-- ssl
-- mysql
-- pycrypto (for broadlink) https://community.home-assistant.io/t/broadlink-rm-pro-getting-error/7877/14
-- phantomjs (for alarm.com) https://www.reddit.com/r/homeassistant/comments/57amjb/alarmcom_homeassistant/
+- setup ssl
+- setup mysql
+- install pycrypto (for broadlink) https://community.home-assistant.io/t/broadlink-rm-pro-getting-error/7877/14
+- install phantomjs (for alarm.com) https://www.reddit.com/r/homeassistant/comments/57amjb/alarmcom_homeassistant/
 - setup zwave unique key
+
 
 # Detailed steps
 

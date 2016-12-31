@@ -4,7 +4,7 @@ my hass notes
 this is the inspiration: https://github.com/sjorsjes/home-assistant#install-mysql-db
 
 # Summary
-* [Install using AOI installer](https://home-assistant.io/getting-started/installation-raspberry-pi-all-in-one/) **Install from the pi, not ssh.**   
+* [Install using AOI installer](https://home-assistant.io/getting-started/installation-raspberry-pi-all-in-one/) **Important: Do not install over ssh**   
 * After AOI install:
 - update wifi and locale
 - setup ssl

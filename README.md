@@ -95,3 +95,12 @@ phantomjs -v
 Uncomment the network key:  
 ```<Option name="NetworkKey" value="0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F 0x10" />```  
 And add the unique key
+
+## Validate Z-wave setup
+```
+sudo systemctl stop home-assistant
+cd /srv/homeassistant/src/open-zwave-control-panel/
+sudo ./ozwcp -p 8888
+http://your_pi_ip:8888
+```
+**Specify your zwave controller, for example ```/dev/ttyACM0``` and hit initialize**

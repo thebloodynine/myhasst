@@ -14,6 +14,7 @@ After AOI install:
 - mysql
 - pycrypto (for broadlink) https://community.home-assistant.io/t/broadlink-rm-pro-getting-error/7877/14
 - phantomjs (for alarm.com) https://www.reddit.com/r/homeassistant/comments/57amjb/alarmcom_homeassistant/
+- setup zwave unique key
 
 # detailed steps
 

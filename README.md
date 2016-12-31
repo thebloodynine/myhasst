@@ -18,12 +18,13 @@ After AOI install:
 # detailed steps
 
 ## update wifi and locale
-
+```
 - sudo nano /etc/default/keyboard
 - sudo dpkg-reconfigure locales
 - sudo dpkg-reconfigure tzdata
 - sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
-add to the end of the file:
+```
+**add to the end of the file:**
 ```
 network={
         ssid="SSIDGOESHERE"

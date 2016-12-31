@@ -103,4 +103,4 @@ cd /srv/homeassistant/src/open-zwave-control-panel/
 sudo ./ozwcp -p 8888
 http://your_pi_ip:8888
 ```
-**Specify your zwave controller, for example ```/dev/ttyACM0``` and hit initialize**
+*Specify your zwave controller, for example ```/dev/ttyACM0``` and hit initialize*

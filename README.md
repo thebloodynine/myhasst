@@ -3,7 +3,7 @@ my hass notes
 
 this is the inspiration: https://github.com/sjorsjes/home-assistant#install-mysql-db
 
-# short version
+# Short version
 
 Run AIO install from the pi, not ssh.  ssh sessions drop causing lots of install issues: 
   https://home-assistant.io/getting-started/installation-raspberry-pi-all-in-one/
@@ -16,16 +16,16 @@ After AOI install:
 - phantomjs (for alarm.com) https://www.reddit.com/r/homeassistant/comments/57amjb/alarmcom_homeassistant/
 - setup zwave unique key
 
-# detailed steps
+# Detailed steps
 
-## update wifi and locale
+## Update wifi and locale
 ```
 - sudo nano /etc/default/keyboard
 - sudo dpkg-reconfigure locales
 - sudo dpkg-reconfigure tzdata
 - sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 ```
-**add to the end of the file:**
+**Add to the end of the file:**
 ```
 network={
         ssid="SSIDGOESHERE"
@@ -91,7 +91,7 @@ phantomjs -v
 1.9.8
 ```
 ## Z-Wave network key
-```$ sudo nano /srv/hass/src/open-zwave-control-panel/config/options.xml```  
+```$ sudo nano /srv/homeassistant/src/open-zwave-control-panel/config/options.xml```  
 Uncomment the network key:  
 ```<Option name="NetworkKey" value="0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F 0x10" />```  
 And add the unique key

@@ -37,6 +37,9 @@ network={
 * After installation:  
   ```$ sudo chmod -R 777 /etc/letsencrypt/archive```  
   ```$ sudo chmod -R 777 /etc/letsencrypt/live```
+### Renew Certificate
+```$ cd certbot```  
+```$ ./certbot-auto renew --quiet --no-self-upgrade --standalone --standalone-supported-challenges http-01```
   
 ## Install MySQL DB
 ```$ sudo apt-get update && sudo apt-get upgrade```  
@@ -86,4 +89,8 @@ sudo apt-get install libfontconfig
 phantomjs -v
 1.9.8
 ```
-
+## Z-Wave network key
+```$ sudo nano /srv/hass/src/open-zwave-control-panel/config/options.xml```  
+Uncomment the network key:  
+```<Option name="NetworkKey" value="0x01, 0x02, 0x03, 0x04, 0x05, 0x06, 0x07, 0x08, 0x09, 0x0A, 0x0B, 0x0C, 0x0D, 0x0E, 0x0F 0x10" />```  
+And add the unique key

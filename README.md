@@ -103,7 +103,7 @@ http://your_pi_ip:8888
 ```
 *Specify your zwave controller, for example ```/dev/ttyACM0``` and hit initialize*
 
-## Start hass from command line to validate
+## Start hass from command line to validate as homeassistant user (note - worked as 'pi' on first run)
 ```
-sudo /srv/homeassistant/homeassistant_venv/bin/hass -c "/home/homeassistant/.homeassistant"
+sudo -u homeassistnat /srv/homeassistant/homeassistant_venv/bin/hass -c "/home/homeassistant/.homeassistant"
 ```

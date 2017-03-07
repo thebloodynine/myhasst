@@ -47,8 +47,7 @@ network={
 ```$ sudo apt-get install python-dev python3-dev```  
 ```$ mysql -uroot -p```  
 ```$ CREATE DATABASE dbname;```  
-```$ CREATE USER 'dbuser'@'localhost' IDENTIFIED BY 'password';```  
-```$ GRANT ALL PRIVILEGES ON dbname.* TO 'dbuser'@'localhost';```  
+```$ CREATE USER 'dbuser'@'localhost' IDENTIFIED BY 'password';```  ```$ GRANT ALL PRIVILEGES ON dbname.* TO 'dbuser'@'localhost';```  
 ```$ FLUSH PRIVILEGES;```  
 
 **Test if user works:**  
@@ -59,7 +58,6 @@ network={
 ```$ sudo su -s /bin/bash homeassistant```  
 ```$ source /srv/homeassistant/homeassistant_venv/bin/activate```  
 ```$ pip3 install --upgrade mysqlclient```  
-
 **Add to configuration.yaml**  
 ```yaml
 recorder:
@@ -105,5 +103,5 @@ http://your_pi_ip:8888
 
 ## Start hass from command line to validate as homeassistant user (note - worked as 'pi' on first run)
 ```
-sudo -u homeassistnat /srv/homeassistant/homeassistant_venv/bin/hass -c "/home/homeassistant/.homeassistant"
+sudo -u homeassistant /srv/homeassistant/homeassistant_venv/bin/hass -c "/home/homeassistant/.homeassistant"
 ```
